@@ -1,6 +1,35 @@
+@use 'variables' as v;
+
+@import url('https://fonts.googleapis.com/css?family=Familjen%20Grotesk:700|Familjen%20Grotesk:400');
+
+
 html {
   box-sizing: border-box;
+  font-family: 'Familjen Grotesk', sans-serif;
+  color: v.$text;
+  background-color: v.$background;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: v.$text;
 }

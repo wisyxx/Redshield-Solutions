@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 15px 8px 0px rgba(0, 0, 0, 0.50);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    .logo__img {
+        width: 132px;
+        position: absolute;
+        top: -4px;
+        z-index: -1;
+    }
+}
+
+.navigation {
+    .link {
+        margin-right: 20px;
+        font-size: 24px;
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
