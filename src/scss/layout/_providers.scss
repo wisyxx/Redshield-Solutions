@@ -1,0 +1,23 @@
+@use '../base/mixins' as m;
+
+.providers {
+  padding: 20px;
+  .providers__title {
+    @include m.phone {
+        text-align: center;
+    }
+  }
+}
+
+.providers__imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  place-items: center;
+  gap: 112px;
+  margin: 15px;
+
+  .provider {
+    width: 220px;
+    height: auto;
+  }
+}
